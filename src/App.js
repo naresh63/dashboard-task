@@ -7,15 +7,6 @@ import Login from './components/Login';
 
 //protected route component
 let user = sessionStorage.getItem('user');
-const ProtectedRoute = ({ user,
-   redirectPath = '/login',
-   children
-   }) => {
-  if (!user) {
-    return <Navigate to={redirectPath} replace />;
-  }
-  return children ? children : <Outlet />;
-};
 
 function App() {
   return (
