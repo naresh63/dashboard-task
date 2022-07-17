@@ -21,11 +21,7 @@ function App() {
   return (
     <div className="App">
      <Routes>
-      <Route path="/dashboard" element={
-      <ProtectedRoute> 
-      <Dashboard/>
-      </ProtectedRoute>
-      } />
+      <Route path="/dashboard" element={<Dashboard/> } />
       <Route path="/view" element={<ViewComp/>}/>
       <Route path="/login" element={<Login/>} />
      </Routes>
